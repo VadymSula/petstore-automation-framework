@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Pet store">
+    <test name="Store controller">
+        <classes>
+            <class name="com.test.GetPetInventoriesTest"/>
+            <class name="com.test.GetPurchaseTest"/>
+            <class name="com.test.PlaceAnOrderForPetTest"/>
+            <class name="com.test.DeletePurchaseOrderTest">
+                <parameter name="zeroId" value="0"/>
+            </class>
+        </classes>
+    </test>
+</suite>
